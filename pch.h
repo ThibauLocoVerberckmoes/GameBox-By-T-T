@@ -1,12 +1,27 @@
-// pch.h: This is a precompiled header file.
-// Files listed below are compiled only once, improving build performance for future builds.
-// This also affects IntelliSense performance, including code completion and many code browsing features.
-// However, files listed here are ALL re-compiled if any one of them is updated between builds.
-// Do not add files here that you will be updating frequently as this negates the performance advantage.
-
 #ifndef PCH_H
 #define PCH_H
+//  Some common mathematical operations and M_PI definition
+#define _USE_MATH_DEFINES
+#include <cmath>
 
-// add headers that you want to pre-compile here
+// SDL libs
+#pragma comment(lib, "sdl2.lib")
+#pragma comment(lib, "SDL2main.lib")
 
+// OpenGL libs
+#pragma comment (lib,"opengl32.lib")
+#pragma comment (lib,"Glu32.lib")
+
+// SDL extension libs 
+#pragma comment(lib, "SDL2_image.lib") // Library to load image files
+#pragma comment(lib, "SDL2_ttf.lib") // Library to use fonts
+
+// SDL and OpenGL Includes
+#include <SDL.h>
+#include <SDL_opengl.h>
+#include <GL\GLU.h>
+#include <SDL_image.h>
+#include <SDL_ttf.h> 
+
+#include "structs.h"
 #endif //PCH_H
